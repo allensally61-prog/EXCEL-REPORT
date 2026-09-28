@@ -3,9 +3,10 @@
 Only the numbers inside existing labels are rewritten; Visio formatting (fonts,
 superscript m3, positions) is left untouched. The original .vsdx is never modified.
 
-Usage:  python update_schematic.py [--excel X.xlsx] [--vsdx IN.vsdx] [--out OUT.vsdx]
+Usage:  python update_schematic.py [--excel X.xlsx] [--vsdx IN.vsdx] [--out OUT.vsdx] [--pages "OPT 4A,OPT 4B"]
+        python update_schematic.py --vsdx IN.vsdx --dump "OPT 4A"     (list shape IDs + text on a page)
 """
-import argparse, csv, json, os, re, subprocess, sys, tempfile, zipfile
+import argparse, csv, json, os, re, shutil, subprocess, sys, tempfile, zipfile
 import xml.etree.ElementTree as ET
 import openpyxl
 
@@ -134,16 +135,17 @@ def build_edits(entry, sh, reg, default_hours=None):
             m = re.search(r"([\d,]+)\s*m3", val)
             edits.append(("Q m3/day", r"(Q = )([\d,]+)(\s*m" + T + "3" + T + "/day)",
                           lambda mm, v=fmt_int(num(m[1])): mm[1] + v + mm[3], ref))
-        val, ref = sh.item(reg, entry["pump"], entry["anchor"])
-        p = parse_pump(val)
-        edits += [("Head", r"(H = )([\d.,]+)(\s*m\b)", lambda m, v=p["H"]: m[1] + v + m[3], ref),
-                  ("Pump Q", r"(H = [^<]*?, Q = )([\d,]+)", lambda m, v=p["Q"]: m[1] + v, ref),
-                  ("Pumps", r"\(\d+w\+\d+s\)", lambda m, v=f"({p['W']}w+{p['S']}s)": v, ref),
+        if "pump" in entry:
+            val, ref = sh.item(reg, entry["pump"], entry["anchor"])
+            p = parse_pump(val)
+            edits += [("Head", r"(H = )([\d.,]+)(\s*m\b)", lambda m, v=p["H"]: m[1] + v + m[3], ref),
+                      ("Pump Q", r"(H = [^<]*?, Q = )([\d,]+)", lambda m, v=p["Q"]: m[1] + v, ref),
+                      ("Pumps", r"\(\d+w\+\d+s\)", lambda m, v=f"({p['W']}w+{p['S']}s)": v, ref),
 ]
-        if p["V"]:
-            edits.append(("Velocity", r"(V = )([\d.]+)(\s*m/s)", lambda m, v=p["V"]: m[1] + v + m[3], ref))
-        else:
-            notes.append("pump velocity not in Excel - V kept")
+            if p["V"]:
+                edits.append(("Velocity", r"([Vv] = )([\d.]+)(\s*m/s)", lambda m, v=p["V"]: m[1] + v + m[3], ref))
+            else:
+                notes.append("pump velocity not in Excel - V kept")
         if "hours" in entry:
             val, ref = sh.item(reg, entry["hours"], entry["anchor"])
             h = re.search(r"(\d+)", val)[1]
@@ -220,6 +222,11 @@ def table_rows(sh, reg, t):
 
 
 def render_emf(rows, tmpdir, name, aspect):
+    if not shutil.which("powershell"):  # not on Windows: same table drawn by the Python renderer
+        import render_table
+        emf, w, h, fs = render_table.render(rows, aspect)
+        print(f"  {name} table: font {fs} pt")
+        return emf, w, h
     jp, ep = os.path.join(tmpdir, name + ".json"), os.path.join(tmpdir, name + ".emf")
     json.dump(rows, open(jp, "w", encoding="utf-8"))
     out = subprocess.run(["powershell", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File",
@@ -257,15 +264,41 @@ def swap_table(xml, sid, rid, ew, eh):
     return xml[:m.start()] + s + xml[m.end():]
 
 
+def dump_page(vsdx, page):
+    z = zipfile.ZipFile(vsdx)
+    files = page_files(z)
+    if page not in files:
+        sys.exit(f"page '{page}' not found; pages: {sorted(set(files))}")
+    xml = z.read(files[page]).decode("utf-8")
+    for m in re.finditer(r"<Shape ID='(\d+)'", xml):
+        try:
+            s, e = text_span(xml, m[1])
+        except KeyError:
+            continue
+        t = re.sub(r"\s+", " ", plain(xml[s:e])).strip()
+        if t:
+            print(f"{m[1]:>6}  {t}")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--excel", default=DEF_XLSX)
     ap.add_argument("--vsdx", default=DEF_VSDX)
     ap.add_argument("--out", default=DEF_OUT)
     ap.add_argument("--map", default=os.path.join(HERE, "mapping.json"))
+    ap.add_argument("--pages", help="comma-separated page names to update (default: all pages in mapping)")
+    ap.add_argument("--dump", metavar="PAGE", help="print every shape ID and its text on PAGE, then stop")
     a = ap.parse_args()
 
+    if a.dump:
+        return dump_page(a.vsdx, a.dump)
     cfg = json.load(open(a.map, encoding="utf-8"))
+    if a.pages:
+        want = [p.strip() for p in a.pages.split(",")]
+        missing = [p for p in want if p not in cfg["pages"]]
+        if missing:
+            sys.exit(f"not in mapping: {missing}")
+        cfg["pages"] = {p: cfg["pages"][p] for p in want}
     wb = openpyxl.load_workbook(a.excel, data_only=True)
     zin = zipfile.ZipFile(a.vsdx)
     files = page_files(zin)
@@ -273,6 +306,10 @@ def main():
     tmpdir = tempfile.mkdtemp(prefix="ltw_")
 
     for page, pc in cfg["pages"].items():
+        if page not in files:
+            problems += 1
+            log.append([page, "", "ERROR", "", "", "", f"page '{page}' not in drawing (pages: {sorted(set(files))})"])
+            continue
         sh = Sheet(wb[pc["sheet"]])
         reg = sh.region(pc["region"])
         fname = files[page]
@@ -280,6 +317,9 @@ def main():
         for key, entry in pc["labels"].items():
             sid, _, n = key.partition("#")
             n = int(n or 0)
+            if not sid.isdigit():  # placeholder: shape ID still to be looked up with --dump
+                log.append([page, key, "SKIPPED", "", "", "", f"shape ID not set in mapping ({entry.get('anchor')})"])
+                continue
             try:
                 edits, notes = build_edits(entry, sh, reg, cfg.get("default_hours"))
                 s, e = text_span(xml, sid)

@@ -1,0 +1,194 @@
+﻿Page,Shape ID,Field,Old (drawing),New (Excel),Excel cells,Note
+OPT 4A,11396,Q m3/day,"Q = 352,492 m3/day","Q = 101,778 m3/day",C6,
+OPT 4A,11396,Head,H = 98 m,H = 105 m,C8,
+OPT 4A,11396,Pump Q,"H = 105 m, Q = 1,836","H = 105 m, Q = 925",C8,
+OPT 4A,11396,Pumps,(8w+4s),(5w+2s),C8,
+OPT 4A,11396,Velocity,v = 1.073 m/s,v = 1.136 m/s,C8,
+OPT 4A,11396,Hours,24 hrs,22 hrs,C7,
+OPT 4A,11396,Sump,"Sump Capacity = 60,000","Sump Capacity = 18,000",C9,
+OPT 4A,11556,DN/PN,DN2200-PN10-PN16,DN1200-PN10-PN16,C12:C13,
+OPT 4A,11398,Q m3/day,"Q = 327,827 m3/day","Q = 94,653 m3/day",C17,
+OPT 4A,11398,Hours,,,C18,field not found on label - skipped
+OPT 4A,11398,Sump,"Sump Capacity = 70,000","Sump Capacity = 18,000",C19,
+OPT 4A,11557,DN/PN,DN2200-PN10-PN16,DN1200-PN10-PN16,C22:C23,
+OPT 4A,11557,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4A,11419,Head,H = 150 m,H = 160 m,C28,
+OPT 4A,11419,Pump Q,"H = 160 m, Q = 1,717","H = 160 m, Q = 789",C28,
+OPT 4A,11419,Pumps,(8w+4s),(5w+2s),C28,
+OPT 4A,11419,Velocity,V = 1.06 m/s,V = 0.969 m/s,C28,
+OPT 4A,11419,Hours,24 hrs,22 hrs,default,
+OPT 4A,11419,Sump,"Sump Capacity = 50,000","Sump Capacity = 18,000",C29,
+OPT 4A,11558,DN/PN,DN2200-PN10-PN30,DN1200-PN10-PN30,C32:C35,
+OPT 4A,11558,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4A,11560,Capacity,"CAPACITY: 90,000","CAPACITY: 28,000",C38,
+OPT 4A,11565,DN/PN,DN2000-PN10-PN25,DN1000-PN10-PN25,C41:C43,
+OPT 4A,11565,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4A,11571,Head,H = 285 m,H = 300 m,C48,
+OPT 4A,11571,Pump Q,"H = 300 m, Q = 739","H = 300 m, Q = 640",C48,
+OPT 4A,11571,Pumps,(6w+3s),(2w+1s),C48,
+OPT 4A,11571,Velocity,V = 1.09 m/s,V = 0.92 m/s,C48,
+OPT 4A,11571,Hours,24 hrs,22 hrs,default,
+OPT 4A,11571,Sump,"Sump Capacity = 50,000","Sump Capacity = 4,000",C49,
+OPT 4A,11571,Head,H = 220 m,H = 240 m,C52,
+OPT 4A,11571,Pump Q,"H = 240 m, Q = 1,145","H = 240 m, Q = 661",C52,
+OPT 4A,11571,Pumps,(6w+3s),(3w+1s),C52,
+OPT 4A,11571,Velocity,V = 1.24 m/s,V = 1.09 m/s,C52,
+OPT 4A,11571,Hours,24 hrs,22 hrs,default,
+OPT 4A,11571,Sump,,,C53,field not found on label - skipped
+OPT 4A,11570,DN/PN,DN1200-PN10-PN40,DN600-PN10-PN40,C56:C60,
+OPT 4A,11570,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4A,11575,DN/PN,DN1200-PN10-PN40,DN600-PN10-PN40,C56:C60,
+OPT 4A,11575,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4A,11400,Capacity,"CAPACITY: 30,000","CAPACITY: 8,000",C63,
+OPT 4A,11420,DN/PN,DN800-PN16-PN40,DN450-PN80-PN120,C66:C70,
+OPT 4A,11420,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4A,11399,Capacity,"CAPACITY: 10,000","CAPACITY: 3,000",C73,
+OPT 4A,11428,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4A,11440,Pump Q,"H = 325 m, Q = 1,145","H = 325 m, Q = 541",C83,
+OPT 4A,11440,Pumps,(6w+3s),(4w+2s),C83,
+OPT 4A,11440,Velocity,V = 1.24 m/s,V = 0.945 m/s,C83,
+OPT 4A,11440,Hours,24 hrs,22 hrs,C85,
+OPT 4A,11440,Sump,"Sump Capacity = 28,000","Sump Capacity = 6,000",C84,
+OPT 4A,11441,DN/PN,DN1400-PN10-PN40,DN900-PN10-PN40,C88:C92,
+OPT 4A,11441,Length,"L = 10,756 m","L = 10,774 m",C88:C92,
+OPT 4A,11442,Capacity,"CAPACITY: 42,000","CAPACITY: 12,000",C95,
+OPT 4A,11432,DN/PN,DN1400-PN10,DN700-PN10,C98:C98,
+OPT 4A,11432,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4A,11431,DN/PN,DN900-PN10-PN30,DN500-PN10-PN30,C101:C104,
+OPT 4A,11431,Length,"L  = 29,168 m","L  = 29,165 m",C101:C104,
+OPT 4A,11431,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4A,11445,Head,H = 128 m,H = 140 m,C109,
+OPT 4A,11445,Pump Q,"H = 140 m, Q = 594","H = 140 m, Q = 374",C109,
+OPT 4A,11445,Pumps,(4w+2s),(2w+1s),C109,
+OPT 4A,11445,Velocity,V = 0.84m/s,V = 1.09m/s,C109,
+OPT 4A,11445,Hours,24 hrs,22 hrs,default,
+OPT 4A,11445,Sump,"Sump Capacity = 5,000","Sump Capacity = 3,000",C110,
+OPT 4A,11433,DN/PN,DN900-PN10-PN25,DN500-PN10-PN16,C113:C114,
+OPT 4A,11433,Length,"L  = 2,348 m","L  = 1,310 m",C113:C114,
+OPT 4A,11433,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4A,11434,DN/PN,DN600-PN10,DN350-PN10,C118:C118,
+OPT 4A,11434,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4A,11451,Capacity,"CAPACITY: 8,000","CAPACITY: 2,000",C120,
+OPT 4A,11446,DN/PN,DN600-PN10-PN16,DN350-PN10-PN16,C123:C124,
+OPT 4A,11446,Length,"L  = 6,773 m","L  = 6,770 m",C123:C124,
+OPT 4A,11446,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4A,11450,Capacity,"CAPACITY: 7,000","CAPACITY: 2,000",C127,
+OPT 4A,11430,DN/PN,DN1000-PN10-PN60,DN500-PN10-PN60,C130:C136,
+OPT 4A,11430,Length,"L  = 154,043 m","L  = 154,041 m",C130:C136,
+OPT 4A,11430,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4A,11438,DN/PN,DN600-PN10-PN16,DN450-PN10-PN16,C140:C141,
+OPT 4A,11438,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4A,11447,Capacity,"CAPACITY: 7,000","CAPACITY: 4,000",C144,
+OPT 4A,11435,DN/PN,DN700-PN16,DN450-PN16,C147:C147,
+OPT 4A,11435,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4A,11437,DN/PN,DN500-PN10,DN300-PN10,C150:C150,
+OPT 4A,11437,Length,"L  = 25,322 m",L  = 620 m,C150:C150,
+OPT 4A,11437,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4A,11436,DN/PN,DN600-PN10-PN40,DN350-PN10-PN40,C155:C159,
+OPT 4A,11436,Length,"L  = 47,425 m","L  = 49,790 m",C155:C159,
+OPT 4A,11436,NOTE,,,,"Excel Sub-total 47,430 != sum of rows 49,790 (used sum)"
+OPT 4A,11436,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4A,11449,Capacity,"CAPACITY: 6,000","CAPACITY: 2,000",C162,
+OPT 4A,10,TABLE,linked Excel table,"18 sections, grand total 460,151 m",OPTION 04,rebuilt from Excel; old link to external pipe-summary file removed
+OPT 4B,10995,Q m3/day,"Q = 1,218,118 m3/day","Q = 152,679 m3/day",C167,
+OPT 4B,10995,Head,H = 300 m,H = 305 m,C169,
+OPT 4B,10995,Pump Q,"H = 305 m, Q = 2,115","H = 305 m, Q = 867",C169,
+OPT 4B,10995,Pumps,(24w+12s),(8w+4s),C169,
+OPT 4B,10995,Hours,24 hrs,22 hrs,C168,
+OPT 4B,10995,Sump,"Sump Capacity = 120,000","Sump Capacity = 26,000",C170,
+OPT 4B,10995,NOTE,,,,pump velocity not in Excel - V kept
+OPT 4B,10946,DN/PN,DN4000-PN10-PN40,DN1600-PN10-PN40,C173:C177,
+OPT 4B,10996,Q m3/day,"Q = 1,132,849 m3/day","Q = 141,991 m3/day",C181,
+OPT 4B,10996,Head,H = 328 m,H = 335 m,C183,
+OPT 4B,10996,Pump Q,"H = 335 m, Q = 2,146","H = 335 m, Q = 807",C183,
+OPT 4B,10996,Pumps,(22w+11s),(8w+2s),C183,
+OPT 4B,10996,Velocity,V = 1.07m/s,V = 0.89m/s,C183,
+OPT 4B,10996,Hours,24 hrs,22 hrs,C182,
+OPT 4B,10996,Sump,"Sump Capacity = 190,000","Sump Capacity = 25,000",C184,
+OPT 4B,11058,DN/PN,DN4000-PN10-PN40,DN1600-PN10-PN40,C187:C191,
+OPT 4B,11062,Head,H = 315 m,H = 325 m,C196,
+OPT 4B,11062,Pump Q,"H = 325 m, Q = 2,146","H = 325 m, Q = 807",C196,
+OPT 4B,11062,Pumps,(22w+11s),(8w+2s),C196,
+OPT 4B,11062,Velocity,V = 1.04m/s,V = 0.89m/s,C196,
+OPT 4B,11062,Hours,24 hrs,22 hrs,default,
+OPT 4B,11062,Sump,"Sump Capacity = 100,000","Sump Capacity = 14,000",C197,
+OPT 4B,11062,Head,H = 240 m,H = 255 m,C209,
+OPT 4B,11062,Pump Q,"H = 255 m, Q = 2,146","H = 255 m, Q = 807",C209,
+OPT 4B,11062,Pumps,(22w+11s),(8w+2s),C209,
+OPT 4B,11062,Velocity,V = 1.04m/s,V = 0.89m/s,C209,
+OPT 4B,11062,Hours,24 hrs,22 hrs,default,
+OPT 4B,11062,Sump,"Sump Capacity = 100,000","Sump Capacity = 14,000",C210,
+OPT 4B,11062,Head,H = 235 m,H = 240 m,C221,
+OPT 4B,11062,Pump Q,"H = 240 m, Q = 2,146","H = 240 m, Q = 807",C221,
+OPT 4B,11062,Pumps,(22w+11s),(8w+2s),C221,
+OPT 4B,11062,Velocity,V = 1.04m/s,V = 0.89m/s,C221,
+OPT 4B,11062,Hours,24 hrs,22 hrs,default,
+OPT 4B,11062,Sump,"Sump Capacity = 100,000","Sump Capacity = 14,000",C222,
+OPT 4B,11059,DN/PN,DN4000-PN10-PN40,DN1600-PN10-PN40,C200:C204,
+OPT 4B,11059,Length,"L = 25,852 m","L = 25,856 m",C200:C204,
+OPT 4B,11060,DN/PN,DN4000-PN10-PN30,DN1600-PN10-PN30,C213:C216,
+OPT 4B,11061,DN/PN,DN4000-PN10-PN25,DN1600-PN10-PN25,C225:C227,
+OPT 4B,11061,Length,"L = 2,058 m",L = 995 m,C225:C227,
+OPT 4B,10865,Capacity,"CAPACITY: 284,000","CAPACITY: 40,000",C230,
+OPT 4B,10965,DN/PN,DN4000-PN10-PN25,DN1600-PN10-PN25,C234:C236,
+OPT 4B,10965,Length,L  = 964 m,L  = 883 m,C234:C236,
+OPT 4B,10965,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4B,11475,DN/PN,DN3800-PN30-PN40,DN1400-PN30-PN40,C240:C241,
+OPT 4B,11475,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4B,11081,DN/PN,DN1400-PN25-PN60,DN600-PN25-PN60,C245:C249,
+OPT 4B,11081,Length,"L  = 78,521 m","L  = 78,449 m",C245:C249,
+OPT 4B,11081,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4B,10868,Capacity,"CAPACITY: 33,000","CAPACITY: 6,000",C252,
+OPT 4B,11086,DN/PN,"DN1,200-PN25",DN500-PN40,C255:C255,
+OPT 4B,11086,Length,"L  = 26,000 m","L  = 25,970 m",C255:C255,
+OPT 4B,11086,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4B,10949,Capacity,"CAPACITY: 21,000","CAPACITY: 4,000",C256,
+OPT 4B,11091,DN/PN,DN3600-PN40,DN1200-PN40,C259:C259,
+OPT 4B,11091,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4B,11116,DN/PN,DN1200-PN10-PN40,DN500-PN10-PN40,C262:C266,
+OPT 4B,11116,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4B,11115,Head,H = 55 m,H = 85 m,C271,
+OPT 4B,11115,Pump Q,"H = 85 m, Q = 1,171","H = 85 m, Q = 428",C271,
+OPT 4B,11115,Pumps,(4w+2s),(2w+1s),C271,
+OPT 4B,11115,Velocity,V = 1.15m/s,V = 0.84m/s,C271,
+OPT 4B,11115,Hours,24 hrs,22 hrs,default,
+OPT 4B,11115,Sump,"Sump Capacity = 74,000","Sump Capacity = 2,000",C272,
+OPT 4B,11117,DN/PN,DN1200-PN10,DN600-PN10,C275:C275,
+OPT 4B,11117,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4B,10878,Capacity,"CAPACITY: 28,000","CAPACITY: 6,000",C277,
+OPT 4B,11476,DN/PN,DN3400-PN25-PN50,DN1100-PN25-PN50,C280:C283,
+OPT 4B,11476,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4B,11118,DN/PN,DN1200-PN25-PN40,DN500-PN25-PN40,C287:C289,
+OPT 4B,11118,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4B,10955,Capacity,"CAPACITY: 28,000","CAPACITY: 6,000",C292,
+OPT 4B,11487,DN/PN,DN3000-PN40-PN80,DN1000-PN40-PN80,C295:C299,
+OPT 4B,11487,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4B,11495,DN/PN,"DN1,200-PN70-PN90",DN450-PN70-PN90,C303:C305,
+OPT 4B,11495,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4B,11225,Capacity,"CAPACITY: 5,000",CAPACITY: 500,C308,
+OPT 4B,11203,DN/PN,"DN1,200-PN10-PN60",DN450-PN10-PN40,C311:C315,
+OPT 4B,11203,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4B,11224,Capacity,"CAPACITY: 30,000","CAPACITY: 4,000",C318,
+OPT 4B,11186,DN/PN,"DN2,800-PN70-PN120",DN900-PN70-PN120,C321:C326,
+OPT 4B,11186,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4B,11187,DN/PN,"DN1,600-PN100-PN110",DN500-PN100-PN110,C330:C331,
+OPT 4B,11187,Length,"L  = 20,211 m","L  = 20,203 m",C330:C331,
+OPT 4B,11187,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4B,11226,DN/PN,DN1200-PN90-PN100,DN400-PN90-PN100,C335:C336,
+OPT 4B,11226,Length,"L  = 3,477 m","L  = 3,470 m",C335:C336,
+OPT 4B,11226,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4B,11228,Capacity,"CAPACITY: 28,000","CAPACITY: 3,000",C339,
+OPT 4B,11227,DN/PN,DN900-PN70-PN110,DN350-PN70-PN110,C342:C346,
+OPT 4B,11227,Length,"L  = 110,615 m","L  = 110,525 m",C342:C346,
+OPT 4B,11227,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4B,11231,Capacity,"CAPACITY: 17,000","CAPACITY: 2,000",C349,
+OPT 4B,11179,DN/PN,DN2400-PN110,DN700-PN110,C352:C352,
+OPT 4B,11179,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4B,11177,DN/PN,DN1600-PN30-PN50,DN600-PN90-PN110,C355:C357,
+OPT 4B,11177,Length,"L  = 5,610 m","L  = 5,600 m",C355:C357,
+OPT 4B,11177,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4B,11178,Capacity,"CAPACITY: 48,000","CAPACITY: 5,000",C360,
+OPT 4B,11167,DN/PN,DN1600-PN60-PN110,DN600-PN60-PN110,C363:C368,
+OPT 4B,11167,NOTE,,,,"pipe Q (m3/day) and v are not in Excel - kept as-is, please check"
+OPT 4B,11156,Capacity,"CAPACITY: 52,000","CAPACITY: 5,000",C371,
+OPT 4B,12,TABLE,linked Excel table,"24 sections, grand total 726,083 m",OPTION 04,rebuilt from Excel; old link to external pipe-summary file removed
