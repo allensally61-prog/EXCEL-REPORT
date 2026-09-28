@@ -1,0 +1,1495 @@
+{
+ "_help": "Each drawing label (Visio shape ID) -> where its values live in Excel. 'anchor' = exact text of a column-B heading inside that option's region of the sheet (spaces/case ignored). 'item' = text of a row below the anchor to read column C from. '#n' after an ID = n-th block inside a label holding several stations.",
+ "default_hours": 22,
+ "pages": {
+  "OPT 1A": {
+   "sheet": "OPTION 01",
+   "region": "KIGOMA OPTION",
+   "labels": {
+    "11396": {
+     "type": "station",
+     "anchor": "KASEKE INTAKE",
+     "daily": "Intake Capacity",
+     "pump": "Raw water high-lift pump",
+     "hours": "Operating time",
+     "sump": "Raw water sump"
+    },
+    "11401": {
+     "type": "pipe",
+     "anchor": "b. Raw water rising main to Kaseke WTP"
+    },
+    "11398": {
+     "type": "station",
+     "anchor": "KASEKE WTP",
+     "daily": "WTP capacity",
+     "pump": "high-lift pump",
+     "hours": "Operating time"
+    },
+    "11402": {
+     "type": "pipe",
+     "anchor": "RISING MAIN FROM KASEKE WTP TO SIMBO JUNCTION"
+    },
+    "11420": {
+     "type": "pipe",
+     "anchor": "RISING MAIN FROM SIMBO JUNCTION TO SIMBO ST"
+    },
+    "11399": {
+     "type": "tank",
+     "anchor": "RISING MAIN FROM SIMBO JUNCTION TO SIMBO ST",
+     "item": "Simbo storage tank"
+    },
+    "11409": {
+     "type": "pipe",
+     "anchor": "RISING MAIN FROM SIMBO JUNCTION TO RUSESA BPS"
+    },
+    "11419": {
+     "type": "station",
+     "anchor": "RUSESA BPS",
+     "pump": "High-lift pump",
+     "hours": "Operating time",
+     "sump": "Sump capacity"
+    },
+    "11422": {
+     "type": "pipe",
+     "anchor": "b. Rising main from Rusesa BPS to Rusesa ST"
+    },
+    "11400": {
+     "type": "tank",
+     "anchor": "RUSESA BPS",
+     "item": "Rusesa storage tank"
+    },
+    "11427": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM RUSESA ST TO NYUMBIGWA JUNCTION"
+    },
+    "11429": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM NYUMBIGWA JUNCTION TO MASANZA UVINZA"
+    },
+    "11439": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM NYUMBIGWA JUNCTION TO MASANZA UVINZA",
+     "item": "Masanza storage tank"
+    },
+    "11428": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM NYUMBIGWA JUNCTION TO KASULU BPS"
+    },
+    "11440": {
+     "type": "station",
+     "anchor": "Kasulu BPS",
+     "pump": "High-lift pump",
+     "hours": "Operating time",
+     "sump": "Sump capacity"
+    },
+    "11441": {
+     "type": "pipe",
+     "anchor": "b. Rising main from Kasulu BPS to Heru juu ST"
+    },
+    "11442": {
+     "type": "tank",
+     "anchor": "Kasulu BPS",
+     "item": "c. Heru juu storage tank"
+    },
+    "11432": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM HERU JUU ST TO HERU JUU JUNCTION"
+    },
+    "11431": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM HERU JUU JUNCTION TO KITAMBUKA BPS"
+    },
+    "11445": {
+     "type": "station",
+     "anchor": "KITAMBUKA BPS",
+     "pump": "High-lift pump",
+     "sump": "Sump capacity"
+    },
+    "11433": {
+     "type": "pipe",
+     "anchor": "b. Rising main from Kitambuka BPS to Kitambuka ST junction"
+    },
+    "11434": {
+     "type": "pipe",
+     "anchor": "c. Rising main from Kitambuka ST junction to Kitambuka ST"
+    },
+    "11451": {
+     "type": "tank",
+     "anchor": "KITAMBUKA BPS",
+     "item": "d. Kitambuka storage tank"
+    },
+    "11446": {
+     "type": "pipe",
+     "anchor": "d. Rising main from Kitambuka junction to Manyovu ST"
+    },
+    "11450": {
+     "type": "tank",
+     "anchor": "KITAMBUKA BPS",
+     "item": "c. Manyovu storage tank"
+    },
+    "11430": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM HERU JUU JUNCTION TO KIBONDO JUNCTION 01"
+    },
+    "11438": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 01 TO KIBONDO NEW ST"
+    },
+    "11447": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 01 TO KIBONDO NEW ST",
+     "item": "New Kibondo storage tank"
+    },
+    "11435": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 01 TO JUNCTION 02"
+    },
+    "11437": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 02 TO KIBONDO EXISTING ST"
+    },
+    "11448": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 02 TO KIBONDO EXISTING ST",
+     "item": "Exising Kibondo storage tank"
+    },
+    "11436": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 02 TO KAKOKONKO ST"
+    },
+    "11449": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 02 TO KAKOKONKO ST",
+     "item": "Kakonko storage tank"
+    }
+   },
+   "table": {
+    "shape": "10",
+    "title": "PIPELINE SUMMARY - OPTION 01",
+    "subtitle": "Kigoma Option",
+    "grand": "Kigoma grand-total"
+   }
+  },
+  "OPT 1B": {
+   "sheet": "OPTION 01",
+   "region": "KATAVI OPTION",
+   "labels": {
+    "11151": {
+     "type": "station",
+     "anchor": "SHUKULA KAREMA INTAKE",
+     "daily": "Intake Capacity",
+     "pump": "Raw water high-lift pump",
+     "hours": "Operating time",
+     "sump": "Raw water sump"
+    },
+    "11152": {
+     "type": "pipe",
+     "anchor": "b. Raw water rising main to Shukula Karema WTP"
+    },
+    "11150": {
+     "type": "station",
+     "anchor": "SHUKULA KAREMA WTP",
+     "daily": "WTP capacity",
+     "pump": "High-lift pump",
+     "hours": "Operating time"
+    },
+    "11153": {
+     "type": "pipe",
+     "anchor": "RISING MAIN FROM SHAKULA KAREMA WTP TO KASEKESE ST"
+    },
+    "11155": {
+     "type": "tank",
+     "anchor": "RISING MAIN FROM SHAKULA KAREMA WTP TO KASEKESE ST",
+     "item": "Kasekese storage tank"
+    },
+    "11154": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KASEKESE ST TO KAYENZE BPS"
+    },
+    "11158": {
+     "type": "station",
+     "anchor": "KAYENZE BPS",
+     "pump": "High-lift pump",
+     "sump": "Sump capacity"
+    },
+    "11157": {
+     "type": "pipe",
+     "anchor": "b. Kayenze BPS to Kayenze ST"
+    },
+    "11156": {
+     "type": "tank",
+     "anchor": "KAYENZE BPS",
+     "item": "c. Kayenze Storage Tank"
+    },
+    "11167": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KAYENZE ST TO MPANDA JUNCTION 02"
+    },
+    "11177": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 02 TO MILALA ST"
+    },
+    "11178": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 02 TO MILALA ST",
+     "item": "Milala storage tank"
+    },
+    "11179": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 1 TO MPANDA JUNCTION 2"
+    },
+    "11187": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 1 TO MSANGINYA JUNCTION"
+    },
+    "11226": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MSANGINYA JUNCTION TO MSANGINYA ST"
+    },
+    "11228": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM MSANGINYA JUNCTION TO MSANGINYA ST",
+     "item": "Msanginya tank"
+    },
+    "11227": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MSANGINYA JUNCTION TO INYONGA ST"
+    },
+    "11231": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM MSANGINYA JUNCTION TO INYONGA ST",
+     "item": "Inyonga storage tank"
+    },
+    "11186": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 01 TO KIZI BPS"
+    },
+    "11213": {
+     "type": "station",
+     "anchor": "KIZI BPS",
+     "pump": "High-lift pump",
+     "sump": "Sump capacity"
+    },
+    "11230": {
+     "type": "pipe",
+     "anchor": "b. Rising main from Kizi BPS to Kizi ST"
+    },
+    "11225": {
+     "type": "tank",
+     "anchor": "KIZI BPS",
+     "item": "c. Kizi storage tank"
+    },
+    "11203": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIZI ST TO MAJIMOTO ST"
+    },
+    "11224": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM KIZI ST TO MAJIMOTO ST",
+     "item": "Majimoto storage tank"
+    }
+   },
+   "table": {
+    "shape": "12",
+    "title": "PIPELINE SUMMARY - OPTION 01",
+    "subtitle": "Katavi Option",
+    "grand": "Katavi grand-total"
+   }
+  },
+  "OPT 1C": {
+   "sheet": "OPTION 01",
+   "region": "RUKWA OPTION",
+   "labels": {
+    "10995": {
+     "type": "station",
+     "anchor": "SAMAZI INTAKE",
+     "daily": "Intake Capacity",
+     "pump": "Raw water high-lift pump",
+     "hours": "Operating time",
+     "sump": "Raw water sump"
+    },
+    "10946": {
+     "type": "pipe",
+     "anchor": "b. Raw water rising main to Samazi WTP"
+    },
+    "10996": {
+     "type": "station",
+     "anchor": "SAMAZI WTP",
+     "daily": "a. WTP capacity",
+     "pump": "High-lift pump",
+     "hours": "Operating time"
+    },
+    "11058": {
+     "type": "pipe",
+     "anchor": "b. Rising main from samazi WTP to Kafukoka BPS 01"
+    },
+    "11062#0": {
+     "type": "station",
+     "anchor": "KAFUKOKA BPS 01",
+     "pump": "High-lift pump",
+     "sump": "Sump capacity"
+    },
+    "11062#1": {
+     "type": "station",
+     "anchor": "MKOWE BPS 02",
+     "pump": "High-lift pump",
+     "sump": "Sump capacity"
+    },
+    "11062#2": {
+     "type": "station",
+     "anchor": "MATANGA BPS 03",
+     "pump": "High-lift pump",
+     "sump": "Sump capacity"
+    },
+    "11059": {
+     "type": "pipe",
+     "anchor": "b. Rising main from Kafukoka BPS 01 to Mkowe BPS 2"
+    },
+    "11060": {
+     "type": "pipe",
+     "anchor": "b. Rising main from BPS 02 to Mkowe BPS 03"
+    },
+    "11061": {
+     "type": "pipe",
+     "anchor": "b. Rising main from BPS 03 to Matanga ST"
+    },
+    "10865": {
+     "type": "tank",
+     "anchor": "MATANGA BPS 03",
+     "item": "c. Matanga storage tank"
+    },
+    "10965": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MATANGA ST TO SUMBAWANGA DC JUNCTION"
+    },
+    "11080": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM SUMBAWANGA DC JUNCTION TO MATAI JUNCTION"
+    },
+    "11081": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM SUMBAWANGA DC JUNCTION TO SUMBAWANGA DC LUSAKA ST"
+    },
+    "10868": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM SUMBAWANGA DC JUNCTION TO SUMBAWANGA DC LUSAKA ST",
+     "item": "Lusaka storage tank"
+    },
+    "11086": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MATAI JUNCTION TO MATAI ST"
+    },
+    "10949": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM MATAI JUNCTION TO MATAI ST",
+     "item": "Matai storage tank"
+    },
+    "11091": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MATAI JUNCTION TO SUMBAWANGA MC JUNCTION"
+    },
+    "11116": {
+     "type": "pipe",
+     "anchor": "SUMBAWANGA MC JUNCTION TO SUMBAWANGA MPONDA BPS"
+    },
+    "11115": {
+     "type": "station",
+     "anchor": "SUMBAWANGA MPONDA BPS",
+     "pump": "High-lift pump",
+     "sump": "Sump capacity"
+    },
+    "11117": {
+     "type": "pipe",
+     "anchor": "b. Rising main from Mponda BPS to Mponda ST"
+    },
+    "10878": {
+     "type": "tank",
+     "anchor": "SUMBAWANGA MPONDA BPS",
+     "item": "Mponda storage tank"
+    },
+    "11118": {
+     "type": "pipe",
+     "anchor": "SUMBAWANGA MC JUNCTION TO CHALA ST"
+    },
+    "10955": {
+     "type": "tank",
+     "anchor": "SUMBAWANGA MC JUNCTION TO CHALA ST",
+     "item": "Chala storage tank"
+    }
+   },
+   "table": {
+    "shape": "11",
+    "title": "PIPELINE SUMMARY - OPTION 01",
+    "subtitle": "Rukwa Option",
+    "grand": "Rukwa grand-total"
+   }
+  },
+  "OPT 5A2": {
+   "sheet": "OPTION 05",
+   "region": "KIGOMA OPTION",
+   "labels": {
+    "11396": {
+     "type": "station",
+     "anchor": "KASEKE INTAKE",
+     "daily": "Intake Capacity",
+     "pump": "Raw water high-lift pump",
+     "hours": "Operating time",
+     "sump": "Raw water sump"
+    },
+    "11401": {
+     "type": "pipe",
+     "anchor": "b. Raw water rising main to Kaseke WTP"
+    },
+    "11398": {
+     "type": "station",
+     "anchor": "KASEKE WTP",
+     "daily": "WTP capacity",
+     "pump": "high-lift pump",
+     "hours": "Operating time"
+    },
+    "11402": {
+     "type": "pipe",
+     "anchor": "RISING MAIN FROM KASEKE WTP TO SIMBO JUNCTION"
+    },
+    "11420": {
+     "type": "pipe",
+     "anchor": "RISING MAIN FROM SIMBO JUNCTION TO SIMBO ST"
+    },
+    "11399": {
+     "type": "tank",
+     "anchor": "RISING MAIN FROM SIMBO JUNCTION TO SIMBO ST",
+     "item": "Simbo storage tank"
+    },
+    "11409": {
+     "type": "pipe",
+     "anchor": "RISING MAIN FROM SIMBO JUNCTION TO RUSESA BPS"
+    },
+    "11419": {
+     "type": "station",
+     "anchor": "RUSESA BPS",
+     "pump": "High-lift pump",
+     "hours": "Operating time",
+     "sump": "Sump capacity"
+    },
+    "11422": {
+     "type": "pipe",
+     "anchor": "b. Rising main from Rusesa BPS to Rusesa ST"
+    },
+    "11400": {
+     "type": "tank",
+     "anchor": "RUSESA BPS",
+     "item": "Rusesa storage tank"
+    },
+    "11427": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM RUSESA ST TO NYUMBIGWA JUNCTION"
+    },
+    "11429": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM NYUMBIGWA JUNCTION TO MASANZA UVINZA"
+    },
+    "11439": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM NYUMBIGWA JUNCTION TO MASANZA UVINZA",
+     "item": "Masanza storage tank"
+    },
+    "11428": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM NYUMBIGWA JUNCTION TO KASULU BPS"
+    },
+    "11440": {
+     "type": "station",
+     "anchor": "Kasulu BPS",
+     "pump": "High-lift pump",
+     "hours": "Operating time",
+     "sump": "Sump capacity"
+    },
+    "11441": {
+     "type": "pipe",
+     "anchor": "b. Rising main from Kasulu BPS to Heru juu ST"
+    },
+    "11442": {
+     "type": "tank",
+     "anchor": "Kasulu BPS",
+     "item": "c. Heru juu storage tank"
+    },
+    "11432": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM HERU JUU ST TO HERU JUU JUNCTION"
+    },
+    "11431": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM HERU JUU JUNCTION TO KITAMBUKA BPS"
+    },
+    "11445": {
+     "type": "station",
+     "anchor": "KITAMBUKA BPS",
+     "pump": "High-lift pump",
+     "sump": "Sump capacity"
+    },
+    "11433": {
+     "type": "pipe",
+     "anchor": "b. Rising main from Kitambuka BPS to Kitambuka ST junction"
+    },
+    "11434": {
+     "type": "pipe",
+     "anchor": "c. Rising main from Kitambuka ST junction to Kitambuka ST"
+    },
+    "11451": {
+     "type": "tank",
+     "anchor": "KITAMBUKA BPS",
+     "item": "d. Kitambuka storage tank"
+    },
+    "11446": {
+     "type": "pipe",
+     "anchor": "d. Rising main from Kitambuka junction to Manyovu ST"
+    },
+    "11450": {
+     "type": "tank",
+     "anchor": "KITAMBUKA BPS",
+     "item": "c. Manyovu storage tank"
+    },
+    "11430": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM HERU JUU JUNCTION TO KIBONDO JUNCTION 01"
+    },
+    "11438": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 01 TO KIBONDO NEW ST"
+    },
+    "11447": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 01 TO KIBONDO NEW ST",
+     "item": "New Kibondo storage tank"
+    },
+    "11435": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 01 TO JUNCTION 02"
+    },
+    "11437": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 02 TO KIBONDO EXISTING ST"
+    },
+    "11448": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 02 TO KIBONDO EXISTING ST",
+     "item": "Exising Kibondo storage tank"
+    },
+    "11436": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 02 TO KAKOKONKO ST"
+    },
+    "11449": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 02 TO KAKOKONKO ST",
+     "item": "Kakonko storage tank"
+    }
+   },
+   "table": {
+    "shape": "10",
+    "title": "PIPELINE SUMMARY - OPTION 05",
+    "subtitle": "Kigoma Option",
+    "grand": "Kigoma grand-total"
+   }
+  },
+  "OPT 5B": {
+   "sheet": "OPTION 05",
+   "region": "KATAVI AND RUKWA COMMON INTAKE OPTION",
+   "table": {
+    "shape": "12",
+    "title": "PIPELINE SUMMARY - OPTION 05",
+    "subtitle": "Katavi and Rukwa Option",
+    "grand": "Katavi and Rukwa grand-total"
+   },
+   "labels": {
+    "10995": {
+     "type": "station",
+     "anchor": "KISAMBALA KIRANDO INTAKE",
+     "daily": "Intake Capacity",
+     "pump": "Raw water high-lift pump",
+     "hours": "Operating time",
+     "sump": "Raw water sump"
+    },
+    "10946": {
+     "type": "pipe",
+     "anchor": "b. Raw water rising main to Samazi WTP"
+    },
+    "10996": {
+     "type": "station",
+     "anchor": "KISAMBALA KIRANDO WTP",
+     "daily": "a. WTP capacity",
+     "pump": "High-lift pump",
+     "hours": "Operating time",
+     "sump": "Clear water tank"
+    },
+    "11058": {
+     "type": "pipe",
+     "anchor": "b. Rising main from Kisambala WTP to Lwafi-Katongoro BPS 01"
+    },
+    "11062#0": {
+     "type": "station",
+     "anchor": "LWAFI-KATONGORO BPS 01",
+     "pump": "High-lift pump",
+     "sump": "Sump capacity"
+    },
+    "11062#1": {
+     "type": "station",
+     "anchor": "Mfili BPS 02",
+     "pump": "High-lift pump",
+     "sump": "Sump capacity"
+    },
+    "11062#2": {
+     "type": "station",
+     "anchor": "Chala BPS 03",
+     "pump": "High-lift pump",
+     "sump": "Sump capacity"
+    },
+    "11059": {
+     "type": "pipe",
+     "anchor": "b. Rising main from Lwafi-Katongoro BPS 01 to Mfili BPS 02"
+    },
+    "11060": {
+     "type": "pipe",
+     "anchor": "b. Rising main from Mfili BPS 02 to Chala BPS 03"
+    },
+    "11061": {
+     "type": "pipe",
+     "anchor": "b. Rising main from Chala BPS 03 to Chala ST"
+    },
+    "10865": {
+     "type": "tank",
+     "anchor": "Chala BPS 03",
+     "item": "c. Chala storage tank"
+    },
+    "10965": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM CHALA ST TO CHALA JUNCTION"
+    },
+    "11475": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM CHALA JUNCTION TO SUMBAWANGA MC JUNCTION"
+    },
+    "11116": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM SUMBAWANGA MC JUNCTION TO SUMBAWANGA MPONDA BPS"
+    },
+    "11115": {
+     "type": "station",
+     "anchor": "SUMBAWANGA MPONDA BPS",
+     "pump": "High-lift pump",
+     "sump": "Sump capacity"
+    },
+    "11117": {
+     "type": "pipe",
+     "anchor": "b. Rising main from Mponda BPS to Mponda ST"
+    },
+    "10878": {
+     "type": "tank",
+     "anchor": "SUMBAWANGA MPONDA BPS",
+     "item": "Mponda storage tank"
+    },
+    "11563": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM SUMBAWANGA MC JUNCTION TO MATAI JUNCTION"
+    },
+    "11571": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MATAI JUNCTION TO SUMBAWANGA DC LUSAKA ST"
+    },
+    "10868": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM MATAI JUNCTION TO SUMBAWANGA DC LUSAKA ST",
+     "item": "Lusaka storage tank"
+    },
+    "11564": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MATAI JUNCTION TO MATAI ST"
+    },
+    "10949": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM MATAI JUNCTION TO MATAI ST",
+     "item": "Matai storage tank"
+    },
+    "11086": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM CHALA JUNCTION TO KIZI JUNCTION"
+    },
+    "11495": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIZI JUNCTION TO KIZI BPT"
+    },
+    "11203": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIZI BPT TO MAJIMOTO ST"
+    },
+    "11224": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM KIZI BPT TO MAJIMOTO ST",
+     "item": "Majimoto ST"
+    },
+    "11186": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIZI JUNCTION TO MPANDA JUNCTION 1"
+    },
+    "11187": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 1 TO MSAGINYA JUNCTION"
+    },
+    "11226": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MSAGINYA JUNCTION TO MSAGINYA ST"
+    },
+    "11228": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM MSAGINYA JUNCTION TO MSAGINYA ST",
+     "item": "Msanginya tank"
+    },
+    "11227": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MSAGINYA JUNCTION TO INYONGA ST"
+    },
+    "11231": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM MSAGINYA JUNCTION TO INYONGA ST",
+     "item": "Inyonga storage tank"
+    },
+    "11179": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 1 TO MPANDA JUNCTION 2"
+    },
+    "11177": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 2 TO MILALA ST"
+    },
+    "11178": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 2 TO MILALA ST",
+     "item": "Milala storage tank"
+    },
+    "11167": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 2 TO KAYENZE ST"
+    },
+    "11156": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 2 TO KAYENZE ST",
+     "item": "Kayenze Storage Tank"
+    },
+    "11225": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM KIZI JUNCTION TO KIZI BPT",
+     "item": "Kizi BPT"
+    }
+   }
+  },
+  "OPT 2A1": {
+   "sheet": "OPTION 02",
+   "region": "KIGOMA OPTION",
+   "labels": {
+    "11396": {
+     "type": "station",
+     "anchor": "KASEKE INTAKE",
+     "daily": "Intake Capacity",
+     "pump": "Raw water high-lift pump",
+     "hours": "Operating time",
+     "sump": "Raw water sump"
+    },
+    "11401": {
+     "type": "pipe",
+     "anchor": "b. Raw water rising main to Kaseke WTP"
+    },
+    "11398": {
+     "type": "station",
+     "anchor": "KASEKE WTP",
+     "daily": "WTP capacity",
+     "pump": "high-lift pump",
+     "hours": "Operating time"
+    },
+    "11402": {
+     "type": "pipe",
+     "anchor": "RISING MAIN FROM KASEKE WTP TO SIMBO JUNCTION"
+    },
+    "11420": {
+     "type": "pipe",
+     "anchor": "RISING MAIN FROM SIMBO JUNCTION TO SIMBO ST"
+    },
+    "11399": {
+     "type": "tank",
+     "anchor": "RISING MAIN FROM SIMBO JUNCTION TO SIMBO ST",
+     "item": "Simbo storage tank"
+    },
+    "11409": {
+     "type": "pipe",
+     "anchor": "RISING MAIN FROM SIMBO JUNCTION TO RUSESA BPS"
+    },
+    "11419": {
+     "type": "station",
+     "anchor": "RUSESA BPS",
+     "pump": "High-lift pump",
+     "hours": "Operating time",
+     "sump": "Sump capacity"
+    },
+    "11422": {
+     "type": "pipe",
+     "anchor": "b. Rising main from Rusesa BPS to Rusesa ST"
+    },
+    "11400": {
+     "type": "tank",
+     "anchor": "RUSESA BPS",
+     "item": "Rusesa storage tank"
+    },
+    "11427": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM RUSESA ST TO NYUMBIGWA JUNCTION"
+    },
+    "11429": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM NYUMBIGWA JUNCTION TO MASANZA UVINZA"
+    },
+    "11439": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM NYUMBIGWA JUNCTION TO MASANZA UVINZA",
+     "item": "Masanza storage tank"
+    },
+    "11428": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM NYUMBIGWA JUNCTION TO KASULU BPS"
+    },
+    "11440": {
+     "type": "station",
+     "anchor": "Kasulu BPS",
+     "pump": "High-lift pump",
+     "hours": "Operating time",
+     "sump": "Sump capacity"
+    },
+    "11441": {
+     "type": "pipe",
+     "anchor": "b. Rising main from Kasulu BPS to Heru juu ST"
+    },
+    "11442": {
+     "type": "tank",
+     "anchor": "Kasulu BPS",
+     "item": "c. Heru juu storage tank"
+    },
+    "11432": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM HERU JUU ST TO HERU JUU JUNCTION"
+    },
+    "11431": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM HERU JUU JUNCTION TO KITAMBUKA BPS"
+    },
+    "11445": {
+     "type": "station",
+     "anchor": "KITAMBUKA BPS",
+     "pump": "High-lift pump",
+     "sump": "Sump capacity"
+    },
+    "11433": {
+     "type": "pipe",
+     "anchor": "b. Rising main from Kitambuka BPS to Kitambuka ST junction"
+    },
+    "11434": {
+     "type": "pipe",
+     "anchor": "c. Rising main from Kitambuka ST junction to Kitambuka ST"
+    },
+    "11451": {
+     "type": "tank",
+     "anchor": "KITAMBUKA BPS",
+     "item": "d. Kitambuka storage tank"
+    },
+    "11446": {
+     "type": "pipe",
+     "anchor": "d. Rising main from Kitambuka junction to Manyovu ST"
+    },
+    "11450": {
+     "type": "tank",
+     "anchor": "KITAMBUKA BPS",
+     "item": "c. Manyovu storage tank"
+    },
+    "11430": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM HERU JUU JUNCTION TO KIBONDO JUNCTION 01"
+    },
+    "11438": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 01 TO KIBONDO NEW ST"
+    },
+    "11447": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 01 TO KIBONDO NEW ST",
+     "item": "New Kibondo storage tank"
+    },
+    "11435": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 01 TO JUNCTION 02"
+    },
+    "11437": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 02 TO KIBONDO EXISTING ST"
+    },
+    "11448": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 02 TO KIBONDO EXISTING ST",
+     "item": "Exising Kibondo storage tank"
+    },
+    "11436": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 02 TO KAKOKONKO ST"
+    },
+    "11449": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 02 TO KAKOKONKO ST",
+     "item": "Kakonko storage tank"
+    }
+   },
+   "table": {
+    "shape": "10",
+    "title": "PIPELINE SUMMARY - OPTION 02",
+    "subtitle": "Kigoma Option",
+    "grand": "Kigoma grand-total"
+   }
+  },
+  "OPT 2b": {
+   "sheet": "OPTION 02",
+   "region": "KATAVI AND RUKWA COMMON INTAKE OPTION",
+   "table": {
+    "shape": "12",
+    "title": "PIPELINE SUMMARY - OPTION 02",
+    "subtitle": "Katavi and Rukwa Option",
+    "grand": "Katavi and Rukwa grand-total"
+   },
+   "labels": {
+    "10995": {
+     "type": "station",
+     "anchor": "SAMAZI INTAKE",
+     "daily": "Intake Capacity",
+     "pump": "Raw water high-lift pump",
+     "hours": "Operating time",
+     "sump": "Raw water sump"
+    },
+    "10946": {
+     "type": "pipe",
+     "anchor": "b. Raw water rising main to Samazi WTP"
+    },
+    "10996": {
+     "type": "station",
+     "anchor": "SAMAZI WTP",
+     "daily": "a. WTP capacity",
+     "pump": "High-lift pump",
+     "hours": "Operating time",
+     "sump": "Clear water tank"
+    },
+    "11058": {
+     "type": "pipe",
+     "anchor": "b. Rising main from samazi WTP to Kafukoka BPS 01"
+    },
+    "11062#0": {
+     "type": "station",
+     "anchor": "KAFUKOKA BPS 01",
+     "pump": "High-lift pump",
+     "sump": "Sump capacity"
+    },
+    "11062#1": {
+     "type": "station",
+     "anchor": "MKOWE BPS 02",
+     "pump": "High-lift pump",
+     "sump": "Sump capacity"
+    },
+    "11062#2": {
+     "type": "station",
+     "anchor": "MATANGA BPS 03",
+     "pump": "High-lift pump",
+     "sump": "Sump capacity"
+    },
+    "11059": {
+     "type": "pipe",
+     "anchor": "b. Rising main from Kafukoka BPS 01 to Mkowe BPS 2"
+    },
+    "11060": {
+     "type": "pipe",
+     "anchor": "b. Rising main from BPS 02 to Mkowe BPS 03"
+    },
+    "11061": {
+     "type": "pipe",
+     "anchor": "b. Rising main from BPS 03 to Matanga ST"
+    },
+    "10865": {
+     "type": "tank",
+     "anchor": "MATANGA BPS 03",
+     "item": "c. Matanga storage tank"
+    },
+    "10965": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MATANGA ST TO SUMBAWANGA DC JUNCTION"
+    },
+    "11475": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM SUMBAWANGA DC JUNCTION TO MATAI JUNCTION"
+    },
+    "11081": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM SUMBAWANGA DC JUNCTION TO SUMBAWANGA DC LUSAKA ST"
+    },
+    "10868": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM SUMBAWANGA DC JUNCTION TO SUMBAWANGA DC LUSAKA ST",
+     "item": "Lusaka storage tank"
+    },
+    "11086": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MATAI JUNCTION TO MATAI ST"
+    },
+    "10949": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM MATAI JUNCTION TO MATAI ST",
+     "item": "Matai storage tank"
+    },
+    "11091": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MATAI JUNCTION TO SUMBAWANGA MC JUNCTION"
+    },
+    "11116": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM SUMBAWANGA MC JUNCTION TO SUMBAWANGA MPONDA BPS"
+    },
+    "11115": {
+     "type": "station",
+     "anchor": "SUMBAWANGA MPONDA BPS",
+     "pump": "High-lift pump",
+     "sump": "Sump capacity"
+    },
+    "11117": {
+     "type": "pipe",
+     "anchor": "b. Rising main from Mponda BPS to Mponda ST"
+    },
+    "10878": {
+     "type": "tank",
+     "anchor": "SUMBAWANGA MPONDA BPS",
+     "item": "Mponda storage tank"
+    },
+    "11476": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM SUMBAWANGA MC JUNCTION TO CHALA JUNCTION"
+    },
+    "11118": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM CHALA JUNCTION TO CHALA ST"
+    },
+    "10955": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM CHALA JUNCTION TO CHALA ST",
+     "item": "Chala storage tank"
+    },
+    "11487": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM CHALA JUNCTION TO KIZI JUNCTION"
+    },
+    "11495": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIZI JUNCTION TO KIZI BPT"
+    },
+    "11225": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM KIZI JUNCTION TO KIZI BPT",
+     "item": "Kizi BPT"
+    },
+    "11203": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIZI BPT TO MAJIMOTO ST"
+    },
+    "11224": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM KIZI BPT TO MAJIMOTO ST",
+     "item": "Majimoto ST"
+    },
+    "11186": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIZI JUNCTION TO MPANDA JUNCTION 1"
+    },
+    "11187": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 1 TO MSAGINYA JUNCTION"
+    },
+    "11226": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MSAGINYA JUNCTION TO MSAGINYA ST"
+    },
+    "11228": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM MSAGINYA JUNCTION TO MSAGINYA ST",
+     "item": "Msanginya tank"
+    },
+    "11227": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MSAGINYA JUNCTION TO INYONGA ST"
+    },
+    "11231": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM MSAGINYA JUNCTION TO INYONGA ST",
+     "item": "Inyonga storage tank"
+    },
+    "11179": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 1 TO MPANDA JUNCTION 2"
+    },
+    "11177": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 2 TO MILALA ST"
+    },
+    "11178": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 2 TO MILALA ST",
+     "item": "Milala storage tank"
+    },
+    "11167": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 2 TO KAYENZE ST"
+    },
+    "11156": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 2 TO KAYENZE ST",
+     "item": "Kayenze Storage Tank"
+    }
+   }
+  },
+  "OPT 3": {
+   "sheet": "OPTION 03",
+   "region": "KIGOMA, KATAVI AND RUKWA COMMON INTAKE OPTION",
+   "labels": {
+    "10995": {
+     "type": "station",
+     "anchor": "SAMAZI INTAKE",
+     "daily": "Intake Capacity",
+     "pump": "Raw water high-lift pump",
+     "hours": "Operating time",
+     "sump": "Raw water sump"
+    },
+    "10946": {
+     "type": "pipe",
+     "anchor": "b. Raw water rising main to Samazi WTP"
+    },
+    "10996": {
+     "type": "station",
+     "anchor": "SAMAZI WTP",
+     "daily": "a. WTP capacity",
+     "pump": "High-lift pump",
+     "hours": "Operating time",
+     "sump": "Clear water tank"
+    },
+    "11058": {
+     "type": "pipe",
+     "anchor": "b. Rising main from samazi WTP to Kafukoka BPS 01"
+    },
+    "11062#0": {
+     "type": "station",
+     "anchor": "KAFUKOKA BPS 01",
+     "pump": "High-lift pump",
+     "sump": "Sump capacity"
+    },
+    "11062#1": {
+     "type": "station",
+     "anchor": "MKOWE BPS 02",
+     "pump": "High-lift pump",
+     "sump": "Sump capacity"
+    },
+    "11062#2": {
+     "type": "station",
+     "anchor": "MATANGA BPS 03",
+     "pump": "High-lift pump",
+     "sump": "Sump capacity"
+    },
+    "11059": {
+     "type": "pipe",
+     "anchor": "b. Rising main from Kafukoka BPS 01 to Mkowe BPS 2"
+    },
+    "11060": {
+     "type": "pipe",
+     "anchor": "b. Rising main from BPS 02 to Mkowe BPS 03"
+    },
+    "11061": {
+     "type": "pipe",
+     "anchor": "b. Rising main from BPS 03 to Matanga ST"
+    },
+    "10865": {
+     "type": "tank",
+     "anchor": "MATANGA BPS 03",
+     "item": "c. Matanga storage tank"
+    },
+    "10965": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MATANGA ST TO SUMBAWANGA DC JUNCTION"
+    },
+    "11475": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM SUMBAWANGA DC JUNCTION TO MATAI JUNCTION"
+    },
+    "11081": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM SUMBAWANGA DC JUNCTION TO SUMBAWANGA DC LUSAKA ST"
+    },
+    "10868": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM SUMBAWANGA DC JUNCTION TO SUMBAWANGA DC LUSAKA ST",
+     "item": "Lusaka storage tank"
+    },
+    "11086": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MATAI JUNCTION TO MATAI ST"
+    },
+    "10949": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM MATAI JUNCTION TO MATAI ST",
+     "item": "Matai storage tank"
+    },
+    "11091": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MATAI JUNCTION TO SUMBAWANGA MC JUNCTION"
+    },
+    "11116": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM SUMBAWANGA MC JUNCTION TO SUMBAWANGA MPONDA BPS"
+    },
+    "11115": {
+     "type": "station",
+     "anchor": "SUMBAWANGA MPONDA BPS",
+     "pump": "High-lift pump",
+     "sump": "Sump capacity"
+    },
+    "11117": {
+     "type": "pipe",
+     "anchor": "b. Rising main from Mponda BPS to Mponda ST"
+    },
+    "10878": {
+     "type": "tank",
+     "anchor": "SUMBAWANGA MPONDA BPS",
+     "item": "Mponda storage tank"
+    },
+    "11476": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM SUMBAWANGA MC JUNCTION TO CHALA JUNCTION"
+    },
+    "11118": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM CHALA JUNCTION TO CHALA ST"
+    },
+    "11487": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM CHALA JUNCTION TO KIZI JUNCTION"
+    },
+    "11495": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIZI JUNCTION TO KIZI BPT"
+    },
+    "11225": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM KIZI JUNCTION TO KIZI BPT",
+     "item": "Kizi BPT"
+    },
+    "11203": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIZI BPT TO MAJIMOTO ST"
+    },
+    "11224": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM KIZI BPT TO MAJIMOTO ST",
+     "item": "Majimoto ST"
+    },
+    "11186": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIZI JUNCTION TO MPANDA JUNCTION 1"
+    },
+    "11187": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 1 TO MSAGINYA JUNCTION"
+    },
+    "11226": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MSAGINYA JUNCTION TO MSAGINYA ST"
+    },
+    "11228": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM MSAGINYA JUNCTION TO MSAGINYA ST",
+     "item": "Msanginya tank"
+    },
+    "11227": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MSAGINYA JUNCTION TO INYONGA ST"
+    },
+    "11231": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM MSAGINYA JUNCTION TO INYONGA ST",
+     "item": "Inyonga storage tank"
+    },
+    "11179": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 1 TO MPANDA JUNCTION 2"
+    },
+    "11177": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 2 TO MILALA ST"
+    },
+    "11178": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 2 TO MILALA ST",
+     "item": "Milala storage tank"
+    },
+    "11167": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 2 TO KAYENZE ST"
+    },
+    "11156": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 2 TO KAYENZE ST",
+     "item": "Kayenze Storage Tank"
+    },
+    "11523": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM NYUMBIGWA JUNCTION TO MASANZA UVINZA"
+    },
+    "11439": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM NYUMBIGWA JUNCTION TO MASANZA UVINZA",
+     "item": "Masanza storage tank"
+    },
+    "11521": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KAREMA JUNCTION TO MASANZA UVINZA JUNCTION"
+    },
+    "11520": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MPANDA JUNCTION 2 TO KAREMA JUNCTION"
+    },
+    "11429": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM MASANZA JUNCTION TO NYUMBIGWA KASULU JUNCTION"
+    },
+    "11427": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM NYUMBIGWA JUNCTION TO RUSESA ST JUNCTION"
+    },
+    "11529": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM RUSESA ST JUNCTION TO RUSESA ST"
+    },
+    "11400": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM RUSESA ST JUNCTION TO RUSESA ST",
+     "item": "Rusesa storage tank"
+    },
+    "11422": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM RUSESA ST JUNCTION TO LOLAWAHA SIMBO ST"
+    },
+    "11399": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM RUSESA ST JUNCTION TO LOLAWAHA SIMBO ST",
+     "item": "Lolawaha storage tank"
+    },
+    "11428": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM NYUMBIGWA JUNCTION TO HERU JUU JUNCTION"
+    },
+    "11432": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM HERU JUU JUNCTION TO HERU JUU ST"
+    },
+    "11442": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM HERU JUU JUNCTION TO HERU JUU ST",
+     "item": "Heru juu storage tank"
+    },
+    "11431": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM HERU JUU JUNCTION TO KITAMBUKA JUNCTION"
+    },
+    "11434": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KITAMBUKA JUNCTION TO KITAMBUKA ST"
+    },
+    "11451": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM KITAMBUKA JUNCTION TO KITAMBUKA ST",
+     "item": "Kitambuka storage tank"
+    },
+    "11446": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KITAMBUKA JUNCTION TO MANYOVU JUNCTION"
+    },
+    "11450": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM KITAMBUKA JUNCTION TO MANYOVU JUNCTION",
+     "item": "c. Manyovu storage tank"
+    },
+    "11430": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM HERU JUU JUNCTION TO KIBONDO JUNCTION 01"
+    },
+    "11438": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 01 TO KIBONDO NEW ST"
+    },
+    "11447": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 01 TO KIBONDO NEW ST",
+     "item": "New Kibondo storage tank"
+    },
+    "11435": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 01 TO JUNCTION 02"
+    },
+    "11437": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 02 TO KIBONDO EXISTING ST"
+    },
+    "11448": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 02 TO KIBONDO EXISTING ST",
+     "item": "Exising Kibondo storage tank"
+    },
+    "11436": {
+     "type": "pipe",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 02 TO KAKOKONKO ST"
+    },
+    "11449": {
+     "type": "tank",
+     "anchor": "GRAVITY MAIN FROM KIBONDO JUNCTION 02 TO KAKOKONKO ST",
+     "item": "Kakonko storage tank"
+    }
+   },
+   "table": [
+    {
+     "shape": "12",
+     "title": "PIPELINE SUMMARY - OPTION 03",
+     "subtitle": "Kigoma, Katavi and Rukwa Common Intake Option",
+     "sections": [
+      1,
+      21
+     ],
+     "grand": "Total (S/N 1-21)"
+    },
+    {
+     "shape": "13",
+     "title": "PIPELINE SUMMARY - OPTION 03",
+     "subtitle": "Kigoma, Katavi and Rukwa Common Intake Option",
+     "sections": [
+      22,
+      31
+     ],
+     "grand": "Total (S/N 22-31)"
+    },
+    {
+     "shape": "14",
+     "title": "PIPELINE SUMMARY - OPTION 03",
+     "subtitle": "Kigoma, Katavi and Rukwa Common Intake Option",
+     "sections": [
+      32,
+      41
+     ],
+     "grand": "Total (S/N 32-41)",
+     "overall": "Kigoma, Katavi and Rukwa grand-total"
+    }
+   ]
+  }
+ }
+}
