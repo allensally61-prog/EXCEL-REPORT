@@ -56,9 +56,9 @@ class Sheet:
         segs, subtotal = [], None
         while i < reg[1]:
             a, b, c, ref = self.rows[i]
-            m = re.match(r"DI-DN(\d+)-PN(\d+)", norm(b))
+            m = re.match(r"DI-DN([\d,]+)-PN(\d+)", norm(b))  # the Excel sometimes writes DN1,100
             if m and c is not None:
-                segs.append((int(m[1]), int(m[2]), num(c), ref))
+                segs.append((int(num(m[1])), int(m[2]), num(c), ref))
             elif norm(b) == "SUB-TOTAL":
                 subtotal = num(c) if c is not None else None  # no cached value until Excel recalculates
                 break
@@ -195,7 +195,7 @@ def table_rows(sh, reg, t):
             {"kind": "head"}]
     sections, last, cur = [], None, None
     for a, b, c, ref in sh.rows[reg[0] + 1:reg[1]]:
-        if re.match(r"DI-DN\d+-PN\d+", norm(b)) and c is not None:
+        if re.match(r"DI-DN[\d,]+-PN\d+", norm(b)) and c is not None:
             if cur is None:
                 cur = {"title": re.sub(r"^[A-Z]\.\s*", "", norm(last)), "pipes": []}
                 sections.append(cur)
@@ -362,6 +362,8 @@ def main():
 
     with zipfile.ZipFile(a.out, "w") as zout:
         for info in zin.infolist():
+            if info.filename in added:  # table picture from an earlier run - replaced below
+                continue
             data = changed[info.filename].encode("utf-8") if info.filename in changed else zin.read(info)
             zout.writestr(info, data, compress_type=info.compress_type)
         for name, data in added.items():

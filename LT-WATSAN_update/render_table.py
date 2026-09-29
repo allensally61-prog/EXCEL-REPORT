@@ -190,4 +190,4 @@ def render(rows, aspect=0):
     e.select(NULL_PEN); e.select(NULL_BRUSH); e.select(0x8000000D)  # stock objects, so ours can be deleted
     for h in [pen, white, *fonts.values(), *brushes.values()]:
         e.delete(h)
-    return e.build(W, H), W, H, FS
+    return e.build(W, H), W, H, round(FS, 2)
