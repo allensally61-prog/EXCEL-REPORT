@@ -6,7 +6,8 @@ tables are drawn by `render_table.ps1` through PowerShell). Needs `pip install o
 
 ## Option 5 on "LT-WATSAN SCHEMATIC DIAGRAM_2050 UPD.vsdx" (2030 and 2040)
 
-Only OPT 5A2 and OPT 5B are changed; the mapping for this drawing is `mapping_2050UPD_opt5.json`.
+Only OPT 5B is changed (OPT 5A2 is left as drawn); label 11644 is retitled
+MPONDA BPS (P7) -> KAYENZE BPS (P7). The mapping for this drawing is `mapping_2050UPD_opt5.json`.
 
 ```
 python update_schematic.py --map mapping_2050UPD_opt5.json --vsdx "LT-WATSAN SCHEMATIC DIAGRAM_2050 UPD.vsdx" ^

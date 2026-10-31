@@ -140,6 +140,9 @@ def plain(s):
 def build_edits(entry, sh, reg, default_hours=None):
     """Return list of (field, pattern, replacement_fn, excel_ref) plus notes."""
     t, edits, notes = entry["type"], [], []
+    if "replace" in entry:  # fixed text correction on the label, e.g. a wrong station name
+        a, b = entry["replace"]
+        edits.append(("Text", re.escape(a), lambda m, v=b: v, "mapping"))
     if t == "pipe":
         segs, subtotal = sh.pipe(reg, entry["anchor"])
         dns = sorted({s[0] for s in segs})
