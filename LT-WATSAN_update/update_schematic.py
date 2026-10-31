@@ -46,9 +46,11 @@ class Sheet:
         return start, end
 
     def anchor(self, reg, text):
-        for i in range(*reg):
-            if norm(self.rows[i][1]) == norm(text):
-                return i
+        """text may be a list of alternative headings (Excel files word them differently); first found wins."""
+        for t in (text if isinstance(text, list) else [text]):
+            for i in range(*reg):
+                if norm(self.rows[i][1]) == norm(t):
+                    return i
         raise KeyError(f"heading '{text}' not found")
 
     def pipe(self, reg, text):
@@ -71,12 +73,13 @@ class Sheet:
 
     def item(self, reg, text, anchor):
         i = self.anchor(reg, anchor)
+        want = {norm(t) for t in (text if isinstance(text, list) else [text])}
         for j in range(i + 1, reg[1]):
             a, b, c, ref = self.rows[j]
+            if norm(b) in want:  # checked first: an item can sit on a numbered row (13 MASHETE BPT)
+                return str(c), ref
             if isinstance(a, (int, float)):  # next numbered section
                 break
-            if norm(b) == norm(text):
-                return str(c), ref
         raise KeyError(f"'{text}' not found under '{anchor}'")
 
 
@@ -97,13 +100,37 @@ def parse_vol(s):
 
 # ---------------------------------------------------------------- Visio text edits
 def sub_nth(text, pattern, repl, n=0):
-    """Replace the n-th match of pattern. Returns (text, old, new) or (text, None, None)."""
-    ms = list(re.finditer(pattern, text))
+    """Replace the n-th match of pattern. Returns (text, old, new) or (text, None, None).
+
+    The pattern is matched on the visible text, because Visio can split a value with
+    formatting tags (23<cp IX='8'/>,<cp IX='9'/>840). Only the characters that differ are
+    rewritten; tags inside them are kept, right after the new characters.
+    """
+    idx, vis, i = [], [], 0
+    for t in re.finditer(r"<[^>]*>|[^<]+", text):
+        if not t[0].startswith("<"):
+            idx += range(t.start(), t.end())
+            vis.append(t[0])
+    vis = "".join(vis)
+    ms = list(re.finditer(pattern, vis))
     if len(ms) <= n:
         return text, None, None
     m = ms[n]
-    new = repl(m)
-    return text[:m.start()] + new + text[m.end():], m[0], new
+    old, new = m[0], repl(m)
+    p = 0
+    while p < min(len(old), len(new)) and old[p] == new[p]:
+        p += 1
+    q = 0
+    while q < min(len(old), len(new)) - p and old[-1 - q] == new[-1 - q]:
+        q += 1
+    a, b = m.start() + p, m.end() - q
+    ins = new[p:len(new) - q]
+    if a < b:
+        ra, rb = idx[a], idx[b - 1] + 1
+        ins += "".join(re.findall(r"<[^>]*>", text[ra:rb]))
+    else:
+        ra = rb = idx[a] if a < len(idx) else len(text)
+    return text[:ra] + ins + text[rb:], old, new
 
 
 def plain(s):

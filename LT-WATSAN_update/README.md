@@ -4,6 +4,17 @@ Pushes values from the LT-WATSAN project summary Excel into the labels of
 `LT-WATSAN SCHEMATIC DIAGRAM_rev03.vsdx`. Runs on Windows (the pipeline-summary
 tables are drawn by `render_table.ps1` through PowerShell). Needs `pip install openpyxl`.
 
+## Option 5 on "LT-WATSAN SCHEMATIC DIAGRAM_2050 UPD.vsdx" (2030 and 2040)
+
+Only OPT 5A2 and OPT 5B are changed; the mapping for this drawing is `mapping_2050UPD_opt5.json`.
+
+```
+python update_schematic.py --map mapping_2050UPD_opt5.json --vsdx "LT-WATSAN SCHEMATIC DIAGRAM_2050 UPD.vsdx" ^
+  --excel "LT-WATSAN PROJECT SUMMARY OPTIONS_OPT01_OPT02_OPT03_OPT04_OPT05_2030updated.xlsx" --out "LT-WATSAN SCHEMATIC DIAGRAM_OPT5_2030.vsdx"
+python update_schematic.py --map mapping_2050UPD_opt5.json --vsdx "LT-WATSAN SCHEMATIC DIAGRAM_2050 UPD.vsdx" ^
+  --excel "LT-WATSAN PROJECT SUMMARY OPTIONS_OPT01_OPT02_OPT03_OPT04_OPT05_2040UPDATES.xlsx" --out "LT-WATSAN SCHEMATIC DIAGRAM_OPT5_2040.vsdx"
+```
+
 ## Design year 2040 (all options)
 
 `LT-WATSAN SCHEMATIC DIAGRAM_rev03_2040.vsdx` = `_UPDATED.vsdx` with every option page
